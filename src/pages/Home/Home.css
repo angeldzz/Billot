@@ -1,0 +1,268 @@
+        .hero-subtitle {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+          color: var(--teal);
+          min-height: 2rem;
+        }
+
+        .hero-stats {
+          display: flex;
+          gap: 2rem;
+          margin-top: 2rem;
+        }
+
+        .hero-stats .stat-item {
+          text-align: left;
+        }
+
+        .hero-stats .stat-number {
+          font-size: 2rem;
+          font-weight: bold;
+          color: var(--primary-green);
+          display: block;
+        }
+
+        .hero-stats .stat-label {
+          font-size: 0.9rem;
+          opacity: 0.8;
+        }
+
+        /* Asegurar que la sección stats sea visible */
+        .stats {
+          padding: 4rem 0;
+          background: rgba(0, 255, 170, 0.05);
+        }
+
+        .stats .stat-item {
+          text-align: center;
+        }
+
+        .stats .stat-number {
+          font-size: 3rem;
+          font-weight: bold;
+          color: var(--primary-green);
+          margin-bottom: 0.5rem;
+          display: block;
+        }
+
+        .stats .stat-label {
+          font-size: 1.1rem;
+          opacity: 0.8;
+        }
+
+        .mockup-title {
+          font-size: 0.9rem;
+          color: var(--primary-green);
+          font-weight: bold;
+        }
+
+        .dashboard-row {
+          display: flex;
+          gap: 1rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .dashboard-card {
+          flex: 1;
+          background: rgba(0, 212, 170, 0.08);
+          border-radius: 10px;
+          padding: 1rem;
+          border: 1px solid rgba(0, 212, 170, 0.2);
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+        }
+
+        .card-icon {
+          font-size: 1.5rem;
+        }
+
+        .card-info h4 {
+          font-size: 0.8rem;
+          margin: 0;
+          opacity: 0.8;
+        }
+
+        .card-number {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: var(--primary-green);
+          margin: 0;
+        }
+
+        .service-list {
+          margin-bottom: 1.5rem;
+        }
+
+        .service-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.8rem;
+          margin-bottom: 0.5rem;
+          background: rgba(0, 212, 170, 0.05);
+          border-radius: 8px;
+          border: 1px solid rgba(0, 212, 170, 0.1);
+        }
+
+        .service-car {
+          font-weight: bold;
+          font-size: 0.9rem;
+        }
+
+        .service-type {
+          font-size: 0.8rem;
+          opacity: 0.8;
+        }
+
+        .service-status {
+          padding: 0.2rem 0.6rem;
+          border-radius: 12px;
+          font-size: 0.7rem;
+          font-weight: bold;
+        }
+
+        .service-status.pending {
+          background: rgba(255, 193, 7, 0.2);
+          color: #ffc107;
+        }
+
+        .service-status.completed {
+          background: rgba(40, 167, 69, 0.2);
+          color: #28a745;
+        }
+
+        .service-status.urgent {
+          background: rgba(220, 53, 69, 0.2);
+          color: #dc3545;
+        }
+
+        .revenue-chart h4 {
+          font-size: 1rem;
+          margin-bottom: 1rem;
+          color: var(--primary-green);
+        }
+
+        .chart-bars {
+          display: flex;
+          align-items: end;
+          gap: 0.5rem;
+          height: 60px;
+        }
+
+        .chart-bar {
+          flex: 1;
+          background: linear-gradient(to top, var(--primary-green), var(--teal));
+          border-radius: 3px;
+          min-height: 20px;
+          animation: chart-grow 1s ease-out;
+        }
+
+        @keyframes chart-grow {
+          from { height: 0; }
+          to { height: var(--final-height); }
+        }
+
+        .feature-list {
+          list-style: none;
+          padding: 0;
+          margin-top: 1rem;
+        }
+
+        .feature-list li {
+          padding: 0.3rem 0;
+          color: var(--primary-green);
+          font-size: 0.9rem;
+        }
+
+        .testimonials {
+          padding: 6rem 0;
+          background: rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonials-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+          gap: 2rem;
+          margin-top: 3rem;
+        }
+
+        .testimonial-card {
+          background: var(--card-bg);
+          border-radius: 20px;
+          padding: 2rem;
+          border: 1px solid rgba(0, 255, 170, 0.1);
+          backdrop-filter: blur(10px);
+          transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+          transform: translateY(-5px);
+          border-color: var(--primary-green);
+          box-shadow: 0 15px 30px rgba(0, 255, 170, 0.2);
+        }
+
+        .testimonial-rating {
+          margin-bottom: 1rem;
+        }
+
+        .star {
+          margin-right: 0.2rem;
+        }
+
+        .testimonial-text {
+          font-style: italic;
+          margin-bottom: 1.5rem;
+          line-height: 1.6;
+          font-size: 1.1rem;
+        }
+
+        .testimonial-author strong {
+          display: block;
+          color: var(--primary-green);
+          margin-bottom: 0.3rem;
+        }
+
+        .testimonial-author span {
+          font-size: 0.9rem;
+          opacity: 0.8;
+        }
+
+        .cta-buttons {
+          display: flex;
+          gap: 1rem;
+          justify-content: center;
+          margin-bottom: 2rem;
+        }
+
+        .cta-guarantee {
+          font-size: 0.9rem;
+          opacity: 0.8;
+          color: var(--primary-green);
+        }
+
+        @media (max-width: 768px) {
+          .hero-stats {
+            flex-direction: column;
+            gap: 1rem;
+          }
+          
+          .dashboard-row {
+            flex-direction: column;
+          }
+          
+          .service-item {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+          }
+          
+          .cta-buttons {
+            flex-direction: column;
+            align-items: center;
+          }
+          
+          .testimonials-grid {
+            grid-template-columns: 1fr;
+          }
+        }
